@@ -10,27 +10,29 @@ import java.util.Date;
 public class Prueba {
 
     public static void main(String[] args) {
-        System.out.println("----------------------");
+        System.out.println("--------------------------------------------");
+        System.out.println("--------------------------------------------");
 
-        RedSocial facebook = new RedSocial();
-        facebook.setCodigo(1);
-        facebook.setNombre("Facebook");
-        facebook.setUrl("www.facebook.com");
+        RedSocial twitter = new RedSocial();
+        twitter.setCodigo(1);
+        twitter.setNombre("Twitter ");
+        twitter.setUrl("www.twitter.com");
 
-        int cod = facebook.getCodigo();
+        int cod = twitter.getCodigo();
         System.out.println("Codigo: " + cod);
-        String nom = facebook.getNombre();
+        String nom = twitter.getNombre();
         System.out.println("Nombre: " + nom);
-        String url = facebook.getUrl();
+        String url = twitter.getUrl();
         System.out.println("URL: " + url);
         System.out.println(" ");
 
-        System.out.println("----------------------");
+        System.out.println("--------------------------------------------");
+        System.out.println("--------------------------------------------");
 
         System.out.println(" ");
         Seccion Deportes = new Seccion();
         Deportes.setNombre("Futbol");
-        Deportes.setNoticia("Messi Balon De Oro 2019 ");
+        Deportes.setNoticia("FC Barcelona gana la UEFA Champions League ");
 
         String sec = Deportes.getNombre();
         System.out.println("Seccion: " + sec);
@@ -38,16 +40,17 @@ public class Prueba {
         System.out.println("Noticia: " + not);
         System.out.println(" ");
 
-        System.out.println("----------------------");
+        System.out.println("--------------------------------------------");
+        System.out.println("--------------------------------------------");
 
         System.out.println(" ");
         Multimedia video = new Multimedia();
         Byte[] bytes = {1, 2, 3};
         video.setArchivo(bytes);
-        video.setFormato(" .mp4 ");
+        video.setFormato(" .wma ");
         video.setTamañoBytes(20.12);
-        video.setNombre("Video1");
-        video.setPat("Av. las americas");
+        video.setNombre("Videos2018");
+        video.setPat("Hermano Miguel y Mariscal Lamra 6-21");
         video.setCreacion(new Date());
         video.setModificacion(new Date());
 
@@ -67,12 +70,13 @@ public class Prueba {
         System.out.println("Modificacion: " + mod);
         System.out.println(" ");
 
-        System.out.println("----------------------");
+        System.out.println("--------------------------------------------");
+        System.out.println("--------------------------------------------");
 
         System.out.println(" ");
         EstructuraPeriodico Datos = new EstructuraPeriodico();
-        Datos.setNombrePeriodico(" PERIODICO VIRTUAL ");
-        Datos.setUbicacion("Av. las Americas");
+        Datos.setNombrePeriodico(" NOTICIERO VIRTUAL ");
+        Datos.setUbicacion("Av Solano");
         Datos.setFecha(new Date());
 
         String no = Datos.getNombrePeriodico();
@@ -83,7 +87,8 @@ public class Prueba {
         System.out.println("Fecha: " + fecha);
         System.out.println(" ");
 
-        System.out.println("----------------------");
+        System.out.println("--------------------------------------------");
+        System.out.println("--------------------------------------------");
 
         System.out.println(" ");
         Noticia noticia = new Noticia();
@@ -94,18 +99,19 @@ public class Prueba {
         noticia.setMultimedia(video);
 
         String aut = noticia.getAutor();
-        System.out.println("Franklin Orellana");
+        System.out.println("Jose Quinde");
         String tit = noticia.getTitulo();
-        System.out.println("Nuevo Alcalde De Cuenca");
+        System.out.println("Elecciones Azuay");
         String cont = noticia.getContenido();
-        System.out.println("Pedro Palacios gana la alcaldia con un 28.9% de votos a favor");
+        System.out.println("Pedro Palacios es el nuevo Alcalde de Cuenca y Yaku Perez es el nuevo Prefecto");
         Multimedia vidnot = noticia.getMultimedia();
         System.out.println("Multimedia: " + vidnot);
         Date fecha1 = noticia.getFecha();
         System.out.println("Fecha: " + fecha1);
         System.out.println(" ");
 
-        System.out.println("----------------------");
+        System.out.println("--------------------------------------------");
+        System.out.println("--------------------------------------------");
         System.out.println(" ");
     }
 
